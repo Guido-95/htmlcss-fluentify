@@ -19,6 +19,7 @@ body {
 }
 
 header{
+   
     line-height: 100px;
     height: 550px;
     background-position:  108% 110%;
@@ -28,46 +29,68 @@ header{
     background-color: #0c325a;
 }
 
+footer{
+    padding-bottom: 5px;
+    height: 15-px;
+    line-height: 150px;
+    background-color: #d3d3d3;   
+}
+
 .container {
     width: 80%;
     margin: auto;
 }
 
 .larghezza50{
+    /* background-color: yellow; */
     width: 50%;
 }
-.larghezza35{
-    width: 35%;
+
+.larghezza70{
+    width: 70%;
 }
+
 
 .logo {
     vertical-align: middle;
     width: 15%;
-   
     /* background-color: yellow; */
 }
 
 .nav-left {
     vertical-align: middle;
+    position: relative;
     width: 45%;
+    z-index: 200;
+    /* background-color: aqua; */
+    
+    
     
     /* background-color: blue; */
 }
 
 .header-right {
-    text-align:right ;
+    text-align:right;
     vertical-align: middle;
     width: 40%;
+    
    
     /* background-color: green; */
 }
 
 .jumbotron{
-    
-    
+z-index: 1;
+  position: relative; 
+  /* background-color: blue; */
+  height: 470px; 
+  
 }
 .titolo_jumbotron{
-    
+    /* background-color: yellow; */
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(35%);
 
 }
 
@@ -78,11 +101,19 @@ ul a{
     color: white;   
 }
 ul > li{
-    
+
     padding-right: 25px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+.titolo_jumbotron > a > .bottone.sfondo{
+    padding: 25px 15px;
+}
+
+.titolo_jumbotron > a {
+    text-decoration: none;
 }
 
 .bottone{
@@ -102,13 +133,175 @@ ul > li{
 div > h1{
     line-height: normal;
     font-size: 50px;
+    margin-bottom: 15px;
     color: white;
 }
 div > .bottone.sfondo {
     padding: 25px 15px;
 }
 
+.sezione1{ 
+    line-height: 40px;
+    text-align: center;
+    height: 150px;
+    background-color: #d3d3d3;
+}
+.sezione1 h2{
+    font-size: 25px;
+    display: inline-block;
+}
+
+p {
+    font-size: 20px;
+    color: #808080;
+}
+
+.text-sezione1{
+    padding-top: 30px;
+    vertical-align: middle;
+    
+}
+
+.colonna{
+    text-align: center;
+   
+    width: calc(33% - 100px);
+    margin: 0px 45px 0px 45px;
+    /* background-color: yellow; */
+}
+
+.immagini {
+    height: 250px;
+    padding-top: 10%;
+}
+
+.immagine-montagna {
+    padding: 20px 0px 40px 100px;
+    height: 550px;
+}
+
+.div-immagine {
+    height: 60%;
+}
+
+.colonna hr {
+    margin: auto;
+    width:20%;
+    margin-top: 20px;
+    border-color: #808080 ; 
+}
+
+.hr-section {
+    margin: auto;
+    width: 95%;
+    margin-bottom: 70px;
+    border-color: #d3d3d3;
+}
+
+.colonna p {
+    padding: 28px 0 70px 0;
+    font-size: 22px;
+    text-align:center;
+    line-height: 25px;
+}
+.testo{
+    height: 100%;
+    width: 57%;
+    
+}
+
+.testo > h2{
+    line-height: 45px;
+    font-size:35px;
+}
+
+.testo > p {
+    padding-top: 20px;
+    padding-bottom:25px;
+    
+}
+.testo > a{
+    font-size: 18px;
+   padding-top: 180px; 
+}
+
+/* .prova1 > p {
+    padding-right: 250px;
+}
+
+h2 {
+    padding-right: 250px;
+    
+} */
+footer h2 {
+    font-size: 30px;
+}
+
+h3 {
+    padding-top: 50px;
+    font-size: 30px;
+    color:#7cbb02
+}
+.carattere{
+    
+    
+    font-size: 25px;
+    padding-left:100px;
+}
+
+.text-footer{
+    font-size: 20px;
+    color: #808080;
+    border-bottom: 1px solid #808080;
+   
+}
+.text-footer_2{
+    padding-right: 30px;
+    font-size: 18px;
+    color: #808080;
+}
+
+footer a{
+    text-decoration: none;
+}
 
 
+.larghezza25_{
+   
+  
+   
+    width: 25%;
+}
+
+footer .fixed{
+    line-height: normal;
+    position: fixed;
+    bottom:0%;
+    left: 74%;
+    
+}
+.bottone.sfondo.fixed{
+    margin-bottom: 2px;
+    padding: 10px 15px;
+    
+}
+
+.larghezza25{
+    
+    /* background-color: blue; */
+    width: 25%;
+}
+
+.div50{
+    
+    /* background-color: orange; */
+    width: 50%;
+
+}
+
+.prova3{
+    text-align: center;
+   
+}
 
 
