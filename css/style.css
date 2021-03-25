@@ -5,7 +5,6 @@
     margin: 0;
 }
 /* impostazioni di reset */
-
 /* float-left, clearfix */
 .float-left {
     float: left;
@@ -16,13 +15,24 @@
     display: table;
 }
 /* /float-left, clearfix */
+/* larghezze personalizzate */
+.larghezza-25{
+    width: 25%;
+}
+.larghezza-50 {
+    width: 50%;
+}
+.larghezza-70{
+    width: 70%;
+}
+/* /larghezze personalizzate */
 
 /* selettori generici */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
     line-height: 100px;
     height: 550px;
     background-image: url(../img/background-header.png);
@@ -32,99 +42,92 @@ header{
     background-color: #0c325a;
 }
 
-footer{
-    padding-bottom: 5px;
-    
+footer {
+    padding-bottom: 10px;
     line-height: 150px;
     background-color: #d3d3d3;   
 }
 
+h3 {
+    padding-top: 50px;
+    font-size: 30px;
+    color:#7cbb02
+}
+
+p {
+    font-size: 20px;
+    color: #808080;
+}
+
+/* container centrato */
 .container {
     width: 80%;
     margin: auto;
 }
+/* /container centrato */
 
-.larghezza-50 {
-    /* background-color: yellow; */
-    width: 50%;
-}
-
-.larghezza70{
-    width: 70%;
-}
-
-
+/* header logo, link*/
 .logo {
     vertical-align: middle;
     width: 15%;
-    /* background-color: yellow; */
 }
-
 .nav-left {
     vertical-align: middle;
     position: relative;
     width: 45%;
-    z-index: 200;
-    /* background-color: aqua; */
-    
-    
-    
-    /* background-color: blue; */
+    z-index: 200; 
 }
-
 .header-right {
     text-align:right;
     vertical-align: middle;
     width: 40%;
-    
-   
-    /* background-color: green; */
 }
 
-.jumbotron{
-z-index: 1;
-  position: relative; 
-  /* background-color: blue; */
-  height: 470px; 
-  
-}
-.titolo_jumbotron{
-    /* background-color: yellow; */
-    position: absolute;
-    top: 35%;
-    left: 0;
-    transform: translateY(35%);
-
-}
-
-ul,
-ul a{
+/* header nav, link, liste */
+header nav > ul,
+header ul a {
     text-decoration: none;
     list-style: none;
     color: white;   
 }
-ul > li{
-
+header ul > li {
     padding-right: 25px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-.titolo_jumbotron > a > .bottone.sfondo{
-    padding: 25px 15px;
+/* header jumbotron */
+.jumbotron {
+  position: relative; 
+  height: 470px; 
 }
-
+.titolo_jumbotron {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(35%);
+}
+.jumbotron > .titolo_jumbotron > h1 {
+    line-height: normal;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: white;
+}
 .titolo_jumbotron > a {
     text-decoration: none;
 }
+.jumbotron .bottone.sfondo {
+    padding: 25px 15px;
+}
 
-.bottone{
+/* bottoni generici */
+.bottone {
     padding: 10px 30px;
     border-radius: 5px;
     border: 1px solid white;
 }
-.bottone.sfondo{
+.bottone.sfondo {
     padding: 10px 30px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -133,60 +136,46 @@ ul > li{
     color: white;
 }
 
-div > h1{
-    line-height: normal;
-    font-size: 50px;
-    margin-bottom: 15px;
-    color: white;
-}
-div > .bottone.sfondo {
-    padding: 25px 15px;
-}
-
-.sezione1{ 
+/* section 1 */
+.sezione_sfondo_grigio { 
     padding-top: 30px;
     line-height: 40px;
     text-align: center;
     height: 150px;
     background-color: #d3d3d3;
 }
-.sezione1 h2{
+.sezione_sfondo_grigio h2 {
     font-size: 25px;
     display: inline-block;
 }
+/* /section 1 */
 
-p {
-    font-size: 20px;
-    color: #808080;
-}
 
-.text-sezione1{
-    
-    vertical-align: middle;
-    
-}
+/* section 2 */
 
-.colonna{
+/* colonne section 2 */
+.colonna {
     text-align: center;
     width: calc(33% - 100px);
-    margin: 0px 45px 0px 45px;
-    /* background-color: yellow; */
+    margin: 0px 45px 0px 45px;  
 }
 
+/* immagini section 2 */
 .immagini {
     height: 250px;
     padding-top: 10%;
 }
 
-.immagine-montagna {
-    padding: 20px 0px 40px 100px;
-    height: 550px;
+/* paragrafi colonne section 2 */
+.colonna p {
+    padding: 28px 0 70px 0;
+    font-size: 22px;
+    text-align:center;
+    line-height: 25px;
 }
 
-.div-immagine {
-    height: 60%;
-}
 
+/* hr separatrici section 2 */
 .colonna hr {
     margin: auto;
     width:20%;
@@ -194,6 +183,7 @@ p {
     border-color: #808080 ; 
 }
 
+/* hr separatrice di section 2 e 3 */
 .hr-section {
     margin: auto;
     width: 95%;
@@ -201,90 +191,87 @@ p {
     border-color: #d3d3d3;
 }
 
-.colonna p {
-    padding: 28px 0 70px 0;
-    font-size: 22px;
-    text-align:center;
-    line-height: 25px;
-}
-.testo {
-    width: 57%;
+/* /section 2 */
+
+/* /hr separatrice di section 2 e 3 */
+
+/* section 3 */
+
+/* immagine sinistra section 3  */
+.immagine-montagna {
+    padding: 20px 0px 40px 100px;
+    height: 550px;
 }
 
-.testo > h2 {
+/* testo destra section 3 */
+.section_3-text-right {
+    width: 57%;
+}
+.section_3-text-right > h2 {
     line-height: 45px;
     font-size:35px;
 }
-
-.testo > p {
+.section_3-text-right > p {
     font-size: 22px;
     padding-top: 20px;
-    padding-bottom:25px;
-    
+    padding-bottom:25px; 
 }
-.testo > a {
+.section_3-text-right > a {
     font-size: 18px;
    padding-top: 180px; 
 }
 
+/* /section 3 */
 
+
+/* footer */
+
+/* titolo footer sinistra */
 footer h2 {
     font-size: 30px;
 }
 
-h3 {
-    padding-top: 50px;
-    font-size: 30px;
-    color:#7cbb02
-}
-.carattere {
-    font-size: 25px;
-    padding-left:100px;
+/* testo footer */
+.div-centrale-footer {
+    text-align: center;  
 }
 
+/* testo centrale footer */
 .text-footer {
-    font-size: 20px;
-    color: #808080;
-    border-bottom: 1px solid #808080;
-   
-}
-.text-footer_2 {
     padding-right: 30px;
     font-size: 18px;
     color: #808080;
 }
+.text-footer_2 {
+    font-size: 20px;
+    color: #808080;
+    border-bottom: 1px solid #808080;
+}
+.code_triangolo {
+    font-size: 25px;
+    padding-left:100px;
+}
+/* /testo centrale footer */
 
-footer a{
+/* bottone destra footer */
+footer .bottone.sfondo {
+    padding: 25px 15px;
     text-decoration: none;
 }
 
+/* /footer */
 
-.larghezza25_{
-    width: 25%;
-}
-
-footer .fixed{
+/* bottone fixed */
+.bottone.sfondo.fixed {
+    text-decoration: none;
     line-height: normal;
     position: fixed;
     bottom:0%;
     left: 74%;
-    
-}
-.bottone.sfondo.fixed{
     margin-bottom: 2px;
     padding: 10px 15px;
     
 }
 
-.larghezza25{
-    
-    /* background-color: blue; */
-    width: 25%;
-}
-
-.div-centrale-footer{
-    text-align: center;
-   
-}
 
 
