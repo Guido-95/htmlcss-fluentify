@@ -5,6 +5,8 @@
     margin: 0;
 }
 /* impostazioni di reset */
+
+/* float-left, clearfix */
 .float-left {
     float: left;
 }
@@ -13,25 +15,26 @@
     clear: both;
     display: table;
 }
+/* /float-left, clearfix */
 
+/* selettori generici */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 header{
-   
     line-height: 100px;
     height: 550px;
-    background-position:  108% 110%;
-    background-size: 55% auto;
     background-image: url(../img/background-header.png);
     background-repeat: no-repeat;
+    background-position:  108% 110%;
+    background-size: 55% auto;
     background-color: #0c325a;
 }
 
 footer{
     padding-bottom: 5px;
-    height: 15-px;
+    
     line-height: 150px;
     background-color: #d3d3d3;   
 }
@@ -41,7 +44,7 @@ footer{
     margin: auto;
 }
 
-.larghezza50{
+.larghezza-50 {
     /* background-color: yellow; */
     width: 50%;
 }
@@ -141,6 +144,7 @@ div > .bottone.sfondo {
 }
 
 .sezione1{ 
+    padding-top: 30px;
     line-height: 40px;
     text-align: center;
     height: 150px;
@@ -157,14 +161,13 @@ p {
 }
 
 .text-sezione1{
-    padding-top: 30px;
+    
     vertical-align: middle;
     
 }
 
 .colonna{
     text-align: center;
-   
     width: calc(33% - 100px);
     margin: 0px 45px 0px 45px;
     /* background-color: yellow; */
@@ -204,35 +207,27 @@ p {
     text-align:center;
     line-height: 25px;
 }
-.testo{
-    height: 100%;
+.testo {
     width: 57%;
-    
 }
 
-.testo > h2{
+.testo > h2 {
     line-height: 45px;
     font-size:35px;
 }
 
 .testo > p {
+    font-size: 22px;
     padding-top: 20px;
     padding-bottom:25px;
     
 }
-.testo > a{
+.testo > a {
     font-size: 18px;
    padding-top: 180px; 
 }
 
-/* .prova1 > p {
-    padding-right: 250px;
-}
 
-h2 {
-    padding-right: 250px;
-    
-} */
 footer h2 {
     font-size: 30px;
 }
@@ -242,20 +237,18 @@ h3 {
     font-size: 30px;
     color:#7cbb02
 }
-.carattere{
-    
-    
+.carattere {
     font-size: 25px;
     padding-left:100px;
 }
 
-.text-footer{
+.text-footer {
     font-size: 20px;
     color: #808080;
     border-bottom: 1px solid #808080;
    
 }
-.text-footer_2{
+.text-footer_2 {
     padding-right: 30px;
     font-size: 18px;
     color: #808080;
@@ -267,9 +260,6 @@ footer a{
 
 
 .larghezza25_{
-   
-  
-   
     width: 25%;
 }
 
@@ -292,14 +282,7 @@ footer .fixed{
     width: 25%;
 }
 
-.div50{
-    
-    /* background-color: orange; */
-    width: 50%;
-
-}
-
-.prova3{
+.div-centrale-footer{
     text-align: center;
    
 }
